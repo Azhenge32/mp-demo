@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 2349552a
+
+  thymeleaf:
+    cache: false
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/mpdemo/*Mapper.xml
+  type-aliases-package: com.az.mpdemo.entity
+logging:
+  level:
+    com.az.mpdemo.mapper: trace
+
